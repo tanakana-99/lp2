@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* ページ全体のスタイル
+------------------------------------------ */
+body {
+    font-family: 'Noto Serif JP', sans-serif;
+    line-height: 1.75;
+    color: #000;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+/* 部品
+------------------------------------------ */
+.container {
+    padding: 0 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 1200px;
+    }
+}
