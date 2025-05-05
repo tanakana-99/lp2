@@ -30,13 +30,63 @@ li {
 /* 部品
 ------------------------------------------ */
 .container {
-    padding: 0 16px;
-    margin-right: auto;
-    margin-left: auto;
+    padding: 0 4.1%;
+    margin: 0 auto;
+    width: 100%;
 }
 
 @media (min-width: 768px) {
     .container {
         max-width: 1200px;
     }
+}
+
+@media (min-width: 768px) {
+    .container-narrow {
+        max-width: 980px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-wide {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
+
+/* ヘッダー
+------------------------------------------ */
+
+.header__title {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@media (min-width: 768px) {
+    .header__title {
+        position: relative;
+    }
+}
+
+.header__title img {
+    position: absolute;
+    top: 24px;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+@media (min-width: 768px) {
+    .header__title img {
+        position: absolute;
+        top: 32px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+
+.mv_pc {
+    width: 100%;
+    height: auto;
 }
