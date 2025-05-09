@@ -11,7 +11,7 @@ body {
 
 
 a {
-    color: #000;
+    color: #FFF;
     text-decoration: none;
 }
 
@@ -67,11 +67,16 @@ li {
 
 .header__title {
     padding: 0 4.1%;
-    /* display: inline-block; */
     text-align: center;
     position: relative;
     margin: 0 auto;
     width: 100%;
+}
+
+@media (min-width: 768px) {
+    .header__title {
+        margin: 0;
+    }
 }
 
 .header__title a {
@@ -88,6 +93,12 @@ li {
     z-index: 1;
 }
 
+@media (min-width: 768px) {
+    .header__title img {
+        top: 30px;
+    }
+}
+
 .mv {
     position: relative;
 }
@@ -99,19 +110,18 @@ li {
 
 .mv__text {
     position: absolute;
-    top: 93%;
-    left: 6%;
-    width: 63.3%;
+    width: 63.333%;
+    bottom: 8%;
+    top: auto;
+    left: 14.866%;
+    transform: translate(-14%, 151px);
 }
 
 @media (min-width: 768px) {
     .mv__text {
-        width: 20%;
-        bottom: 317px;
-        top: auto;
-        left: 14.866%;
-        transform: translate(-14%, 151px);
-        min-width: 24%;
+        min-width: 0;
+        bottom: 57.2%;
+        left: 23.7%;
     }
 }
 
@@ -121,16 +131,28 @@ li {
 
 @media (min-width: 768px) {
     .mv_pc-logo {
-        width: 100%;
+        width: 32%;
         height: auto;
     }
+}
+
+.mv__text__title {
+    width: 100%;
 }
 
 .mv__text__catch {
     font-size: 20px;
     line-height: 2.3;
     letter-spacing: 6px;
-    width: max-content;
+    width: auto;
+    white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+    .mv__text__catch {
+        font-size: 25px;
+        letter-spacing: 7.4px;
+    }
 }
 
 .sales__box {
@@ -147,11 +169,12 @@ li {
 @media (min-width: 768px) {
     .sales__box {
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: left;
         min-width: 775px;
         max-width: 1000px;
-        margin: 92px auto 30px;
+        margin: 3.8% auto 2.6%;
+        height: 146px;
+        padding: 0 3.1%;
     }
 }
 
@@ -162,6 +185,10 @@ li {
 @media (min-width: 768px) {
     .sales__box__top {
         padding: 0;
+        padding-top: 29px;
+        line-height: 1.75;
+        text-align: left;
+        white-space: nowrap;
     }
 }
 
@@ -169,9 +196,23 @@ li {
     letter-spacing: 2px;
 }
 
+@media (min-width: 768px) {
+    .sales__box__title {
+        font-size: 24px;
+        letter-spacing: 2.5px;
+    }
+}
+
 .sales__box__price {
     font-size: 14px;
     letter-spacing: 1.1px;
+}
+
+@media (min-width: 768px) {
+    .sales__box__price {
+        font-size: 16px;
+        letter-spacing: 1.5px;
+    }
 }
 
 .sales__box__btn {
@@ -180,6 +221,12 @@ li {
     color: #fff;
     align-items: center;
     row-gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .sales__box__btn {
+        margin-left: 7%;
+    }
 }
 
 .sales__box__btn__list {
@@ -213,6 +260,7 @@ li {
 @media (min-width: 768px) {
     .shop-btn {
         width: 300px;
+        font-size: 18px;
     }
 }
 
@@ -244,6 +292,7 @@ li {
 @media (min-width: 768px) {
     .buy-btn {
         width: 300px;
+        font-size: 18px;
     }
 }
 
@@ -263,6 +312,12 @@ li {
     margin-bottom: 44px;
 }
 
+@media (min-width: 768px) {
+    .keep__description {
+        margin-bottom: 69px;
+    }
+}
+
 .keep__description__text-box {
     padding: 0% 4.1%;
     margin: 0 auto;
@@ -275,9 +330,9 @@ li {
 @media (min-width: 768px) {
     .keep__description__text-box {
         padding: 0;
-        right: -47%;
+        right: -41%;
         width: 458px;
-        top: 20%
+        top: 21.8%
     }
 }
 
@@ -305,12 +360,20 @@ li {
 @media (min-width: 768px) {
     .keep__description__catch {
         text-align: left;
+        line-height: 1.4;
+        margin-bottom: 20px;
     }
 }
 
 .keep__description__text {
     font-size: 14px;
     line-height: 2.2;
+}
+
+@media (min-width: 768px) {
+    .keep__description__text {
+        width: 93%;
+    }
 }
 
 .voices {
@@ -357,6 +420,12 @@ li {
     letter-spacing: 1.5px;
 }
 
+@media (min-width: 768px) {
+    .voices_title {
+        font-size: 45px;
+        margin-bottom: 2px;
+    }
+}
 
 .voices_title-ja {
     font-size: 16px;
@@ -364,6 +433,13 @@ li {
     margin-bottom: 36px;
     letter-spacing: 1.1px;
     line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+    .voices_title-ja {
+        font-size: 20px;
+        margin-bottom: 45px;
+    }
 }
 
 .bi-arrow-left-short {
@@ -383,7 +459,8 @@ li {
 
 @media (min-width: 768px) {
     .bi-arrow-left-short {
-        left: 1%;
+        left: 0;
+        top: 61%;
         font-size: 45px;
         width: 48px;
         height: 48px;
@@ -408,10 +485,17 @@ li {
 
 @media (min-width: 768px) {
     .bi-arrow-right-short {
-        right: 1%;
+        right: 0;
+        top: 61%;
         font-size: 45px;
         width: 48px;
         height: 48px;
+    }
+}
+
+@media (min-width: 768px) {
+    .voices-slick {
+        width: 980px;
     }
 }
 
@@ -423,6 +507,12 @@ li {
     height: 344px;
     margin: 0 7px;
     background-color: #DBF7F9;
+}
+
+@media (min-width: 768px) {
+    .voices__box__item {
+        height: 388px;
+    }
 }
 
 .voices__img {
@@ -440,10 +530,22 @@ li {
     margin-bottom: 20px;
 }
 
+@media (min-width: 768px) {
+    .voices__name {
+        font-size: 15px;
+    }
+}
+
 .voices__box__item__text {
     text-align: left;
     line-height: 2;
     padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .voices__box__item__text {
+        font-size: 16px;
+    }
 }
 
 /* Slickドット */
@@ -455,7 +557,7 @@ li {
     display: flex;
     justify-content: center;
     position: static;
-    margin: 10px 0;
+    margin: 15px 0;
     white-space: nowrap;
     overflow-x: auto;
     text-align: center;
@@ -474,8 +576,14 @@ li {
 
 .qa {
     background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
-    padding-bottom: 32px;
-    margin-bottom: 50px;
+    padding-bottom: 7px;
+    margin-bottom: 43px;
+}
+
+@media (min-width: 768px) {
+    .qa {
+        margin-bottom: 67px;
+    }
 }
 
 .qa_title-en {
@@ -483,20 +591,21 @@ li {
     font-size: 30px;
     font-weight: bold;
     text-align: center;
-    margin: 32px 0 4px;
+    margin: 42px 0 -6px;
+    padding-top: 27px;
 }
 
 @media (min-width: 768px) {
     .qa_title-en {
         font-size: 45px;
-        padding-top: 40px;
+        padding-top: 26px;
     }
 }
 
 .qa_title-ja {
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 37px;
+    margin-bottom: 35px;
     text-align: center;
 }
 
@@ -518,29 +627,35 @@ li {
 }
 
 .qa__container__box__item {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
 }
 
 @media (min-width: 768px) {
     .qa__container__box__item {
-        margin-bottom: 25px;
+        margin-bottom: 26px;
     }
 }
 
 .qa__container__box__item__question {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 20px 4.1% 20px;
-    0 margin: 0 auto;
+    padding: 16px 4.1% 18px;
+    margin: 0 auto;
     width: 100%;
     background-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .qa__container__box__item__question {
+        padding: 24px 4% 14px;
+        justify-content: left;
+    }
 }
 
 .mark-q {
     font-family: EB Garamond, serif;
     font-size: 16px;
-    margin: 16px 21px 0 16px;
+    margin: 0 14px 0 1px;
 }
 
 @media (min-width: 768px) {
@@ -548,6 +663,13 @@ li {
         font-size: 18px;
     }
 }
+
+@media (min-width: 768px) {
+    .triangle {
+        margin-left: 10.4%;
+    }
+}
+
 
 .accrdion-q {
     text-align: left;
@@ -561,32 +683,52 @@ li {
 
 .qa__container__box__item__answer {
     display: flex;
-    padding: 20px 4.1% 20px;
+    padding: 0 1% 28px;
     overflow: hidden;
     background-color: #fff;
 }
 
+@media (min-width: 768px) {
+    .qa__container__box__item__answer {
+        padding: 0 1.8% 18px;
+    }
+}
+
 .accrdion-a {
     text-align: left;
-    width: 76.15%;
+    width: 85.15%;
     font-size: 15px;
     font-weight: 500;
+    line-height: 1.85;
+}
+
+@media (min-width: 768px) {
+    .accrdion-a {
+        width: 88.15%;
+    }
 }
 
 .mark-a {
     font-family: EB Garamond, serif;
     font-size: 16px;
-    margin: 0 21px 0 16px;
+    margin: 0 13px;
 }
 
 @media (min-width: 768px) {
     .mark-a {
         font-size: 18px;
+        margin: 0 17px 0 13px;
     }
 }
 
 .sales__box-02 {
-    margin-top: 0;
+    margin: 0 28px 46px;
+}
+
+@media (min-width: 768px) {
+    .sales__box-02 {
+        margin: 0 16.66%;
+    }
 }
 
 .button-to-top__box {
@@ -596,7 +738,7 @@ li {
 
 @media (min-width: 768px) {
     .button-to-top__box {
-        max-width: 1200px;
+        max-width: 1500px;
     }
 }
 
@@ -607,12 +749,18 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 8px;
+    margin-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .button-to-top__container {
+        margin-right: 10%;
+    }
 }
 
 .button-to-top {
     color: #fff;
-    font-size: 40px;
+    font-size: 33px;
 }
 
 .footer {
@@ -620,6 +768,13 @@ li {
     background-color: #0071CE;
     color: #fff;
 }
+
+@media (min-width: 768px) {
+    .footer {
+        max-width: 1500px;
+    }
+}
+
 
 .footer__container {
     display: flex;
@@ -630,7 +785,7 @@ li {
     .footer__container {
         flex-direction: row;
         align-items: center;
-        justify-content: space-evenly;
+        margin-left: 12%;
         height: 104px;
     }
 }
@@ -638,8 +793,8 @@ li {
 .footer__container__title {
     font-family: "Marcellus";
     font-size: 28px;
-    margin: 24px auto;
-    letter-spacing: 5px;
+    margin: 16px auto;
+    letter-spacing: 5.5px;
 }
 
 @media (min-width: 768px) {
@@ -647,6 +802,8 @@ li {
         display: flex;
         align-items: center;
         margin: 0;
+        font-size: 32px;
+        letter-spacing: 6.7px;
     }
 }
 
@@ -656,12 +813,14 @@ li {
     justify-content: center;
     align-items: center;
     column-gap: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 23px;
 }
 
 @media (min-width: 768px) {
     .footer__container__list {
         margin-bottom: 0;
+        column-gap: 32px;
+        margin-left: 15.1%;
     }
 }
 
@@ -669,13 +828,23 @@ li {
     font-size: 12px;
 }
 
+@media (min-width: 768px) {
+    .footer__container__list li {
+        font-size: 14px;
+    }
+}
+
 .footer__container__copyright {
     font-size: 11px;
-    margin-bottom: 24px;
+    margin-bottom: 23px;
+    letter-spacing: 0.5px;
 }
 
 @media (min-width: 768px) {
     .footer__container__copyright {
         margin-bottom: 0;
+        font-size: 12px;
+        margin-left: 11.6%;
+        letter-spacing: 0.7px;
     }
 }
