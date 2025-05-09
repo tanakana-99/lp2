@@ -1,4 +1,3 @@
-// カルーセル
 $('.voices__box').slick({
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -19,9 +18,6 @@ $('.voices__box').slick({
 
 $(document).ready(function () {
     $('.qa__container__box__item__answer').hide();
-
-    $('.qa__container__box__item').first().addClass('open')
-        .find('.qa__container__box__item__answer').show();
 
     $('.qa__container__box__item').on('click', function () {
         var content = $(this).find('.qa__container__box__item__answer');
