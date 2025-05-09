@@ -258,25 +258,16 @@ li {
     margin-bottom: 20px;
     width: 100%;
     white-space: nowrap;
+    padding: 4% 19%;
 }
 
 @media (min-width: 768px) {
     .shop-btn {
         width: 300px;
         font-size: 18px;
-    }
-}
-
-.shop-btn a {
-    padding: 4% 19%;
-}
-
-@media (min-width: 768px) {
-    .shop-btn a {
         padding: 4% 17%;
     }
 }
-
 
 .buy-btn {
     display: flex;
@@ -289,23 +280,13 @@ li {
     height: 58px;
     width: 100%;
     white-space: nowrap;
+    padding: 4% 36%;
 }
-
 
 @media (min-width: 768px) {
     .buy-btn {
         width: 300px;
         font-size: 18px;
-    }
-}
-
-
-.buy-btn a {
-    padding: 4% 36%;
-}
-
-@media (min-width: 768px) {
-    .buy-btn a {
         padding: 4% 36%;
     }
 }
@@ -770,6 +751,12 @@ li {
     text-align: center;
     background-color: #0071CE;
     color: #fff;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        padding: 0 1px;
+    }
 }
 
 .footer__container {
