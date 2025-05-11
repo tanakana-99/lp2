@@ -43,7 +43,6 @@ li {
 @media (min-width: 768px) {
     .container {
         max-width: 1200px;
-        margin-left: 0;
     }
 }
 
@@ -57,7 +56,6 @@ li {
     .container-wide {
         max-width: 1500px;
         margin: auto;
-        margin-left: 0;
     }
 }
 
@@ -175,7 +173,7 @@ li {
         justify-content: left;
         min-width: 775px;
         max-width: 1000px;
-        margin: 3.8% auto 2.6%;
+        margin: 3.3% auto 3%;
         height: 146px;
         padding: 0 3.1%;
     }
@@ -188,7 +186,7 @@ li {
 @media (min-width: 768px) {
     .sales__box__top {
         padding: 0;
-        padding-top: 29px;
+        padding-top: 35px;
         line-height: 1.75;
         text-align: left;
         white-space: nowrap;
@@ -243,6 +241,7 @@ li {
         display: flex;
         gap: 32px;
         flex-direction: row;
+        margin-top: 16px;
     }
 }
 
@@ -298,7 +297,7 @@ li {
 
 @media (min-width: 768px) {
     .keep__description {
-        margin-bottom: 69px;
+        margin-bottom: 70px;
     }
 }
 
@@ -357,6 +356,7 @@ li {
 @media (min-width: 768px) {
     .keep__description__text {
         width: 93%;
+        line-height: 2.3;
     }
 }
 
@@ -383,6 +383,7 @@ li {
         max-width: 1000px;
         padding: 0 10px;
         margin: 0 auto;
+        width: 94.86%;
     }
 }
 
@@ -444,7 +445,7 @@ li {
 @media (min-width: 768px) {
     .bi-arrow-left-short {
         left: 0;
-        top: 61%;
+        top: 55%;
         font-size: 45px;
         width: 48px;
         height: 48px;
@@ -470,7 +471,7 @@ li {
 @media (min-width: 768px) {
     .bi-arrow-right-short {
         right: 0;
-        top: 61%;
+        top: 55%;
         font-size: 45px;
         width: 48px;
         height: 48px;
@@ -480,6 +481,7 @@ li {
 @media (min-width: 768px) {
     .voices-slick {
         width: 980px;
+        margin: 0 auto;
     }
 }
 
@@ -505,9 +507,20 @@ li {
     margin-top: 28px;
 }
 
+@media (min-width: 768px) {
+    .voices__img {
+        margin-top: 40px;
+    }
+}
+
 .pc-person {
     border-radius: 40px;
+}
 
+@media (min-width: 768px) {
+    .pc-person {
+        border-radius: 50px;
+    }
 }
 
 .voices__name {
@@ -557,6 +570,12 @@ li {
     font-size: 10px;
 }
 
+/* @media (min-width: 768px) {
+    .slick-slide {
+        margin: 0 20px;
+    }
+} */
+
 
 .qa {
     background: transparent linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%) 0% 0% no-repeat padding-box;
@@ -566,7 +585,8 @@ li {
 
 @media (min-width: 768px) {
     .qa {
-        margin-bottom: 67px;
+        margin-bottom: 50px;
+        padding-bottom: 17px;
     }
 }
 
@@ -723,6 +743,7 @@ li {
 @media (min-width: 768px) {
     .button-to-top__box {
         max-width: 1500px;
+        margin-top: 5px;
     }
 }
 
@@ -753,12 +774,6 @@ li {
     color: #fff;
 }
 
-@media (min-width: 768px) {
-    .footer {
-        padding: 0 1px;
-    }
-}
-
 .footer__container {
     display: flex;
     flex-direction: column;
@@ -766,13 +781,14 @@ li {
 
 @media (min-width: 768px) {
     .footer__container {
-        max-width: 1500px;
+        max-width: 1200px;
         flex-direction: row;
         align-items: center;
         height: 104px;
         white-space: nowrap;
-        justify-content: center;
+        justify-content: space-between;
         column-gap: 11.7%;
+        margin: 0 12%;
     }
 }
 
@@ -805,8 +821,8 @@ li {
 @media (min-width: 768px) {
     .footer__container__list {
         margin-bottom: 0;
-        column-gap: 32px;
-        flex-wrap: wrap;
+        column-gap: 11.2%;
+        padding-left: 4%;
     }
 }
 
