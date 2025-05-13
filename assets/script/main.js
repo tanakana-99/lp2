@@ -1,5 +1,6 @@
 $('.voices__box').slick({
     infinite: true,
+    centerMode: false,
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
