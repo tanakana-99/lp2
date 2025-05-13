@@ -1,4 +1,5 @@
 $('.voices__box').slick({
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 3,
     dots: true,
@@ -15,6 +16,7 @@ $('.voices__box').slick({
         }
     }]
 });
+
 
 $(document).ready(function () {
     $('.qa__container__box__item__answer').hide();
