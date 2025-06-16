@@ -526,6 +526,7 @@ form {
         width: 48px;
         height: 48px;
         font-size: 45px;
+        z-index: -1;
     }
 }
 
@@ -557,6 +558,20 @@ form {
 
 @media (min-width: 768px) {
     .pc-person {
+        border-radius: 50px;
+    }
+}
+
+.pc-person-g {
+    width: 80px;
+    height: auto;
+    border-radius: 50px;
+}
+
+@media (min-width: 768px) {
+    .pc-person-g {
+        width: 100px;
+        height: auto;
         border-radius: 50px;
     }
 }
